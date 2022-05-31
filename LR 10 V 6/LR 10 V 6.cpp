@@ -85,16 +85,12 @@ int main() {
     int arr[10][100];
     int size1 = 0;
     int size2 = 0;
-    int size2_cop = 0;
 
     if (!file.is_open()) {
         cout << "Ошибка открытия файла" << endl;
     }
     else {
         cout << "Файл открыт" << endl;
-        char ch;
-        int n;
-        string num;
         while (!file.eof()) {
 
             file >> size1 >> size2;
